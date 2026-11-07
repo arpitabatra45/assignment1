@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #222;
+            color: #333;
+        }
+
+        header {
+            background: #f060eb;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h3 {
+            font-size: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 13px;
+        }
+
+        nav a:hover {
+            color: #ff7655;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            background: #f5f5f5;
+            min-height: 100vh;
+        }
+
+        section {
+            padding: 30px 25px;
+        }
+
+        /* Home Section */
+
+        .home {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 230px;
+        }
+
+        .home h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .home h2 {
+            color: coral;
+            font-size: 30px;
+            margin-bottom: 12px;
+        }
+
+        .home p {
+            color: gray;
+            font-size: 13px;
+        }
+
+        .profile {
+            width: 180px;
+            height: 150px;
+            border-radius: 50%;
+            background: #c5ddff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 90px;
+        }
+
+        /* About Section */
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+
+        .about p {
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        /* Skills Section */
+
+        .skills {
+            display: flex;
+            gap: 15px;
+        }
+
+        .skill {
+            background: rgb(244, 117, 62);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            flex: 1;
+            border-radius: 5px;
+        }
+
+        .skill h3 {
+            font-size: 15px;
+        }
+
+        /* Projects Section */
+
+        .project {
+            background: white;
+            padding: 35px;
+            margin: 15px auto;
+            width: 65%;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .project h3 {
+            font-size: 16px;
+        }
+
+        /* Contact Section */
+
+        .contact form {
+            background: white;
+            padding: 20px;
+            max-width: 350px;
+            margin: auto;
+            border-radius: 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #034caf;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background: coral;
+        }
+
+        footer {
+            background: rgb(200, 74, 235);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 13px;
+        }
+
+        .back {
+            text-align: right;
+            padding: 15px;
+        }
+
+        .back a {
+            background:aqua;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        /* Mobile Responsive */
+
+        @media(max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+
+            .home {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .home h1 {
+                font-size: 28px;
+            }
+
+            .home h2 {
+                font-size: 23px;
+            }
+
+            .skills {
+                flex-direction: column;
+            }
+
+            .project {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container" id="top">
+
+    <!-- Header -->
+    <header>
+        <h3>My Portfolio</h3>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home">
+        <div>
+            <h3>Hi👋, I am</h3>
+            <h1>Arpita </h1>
+            <h1>web Developer</h1>
+            <p>Building modern web applications with HTML and CSS.</p>
+        </div>
+
+        <div class="profile">
+            👨🏻‍💻
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+
+        <p>
+            Hello! My name is Arpita. I am a passionate web development
+            student who loves creating websites and learning new technologies.
+            I enjoy working with HTML, CSS and JavaScript.
+            My goal is to become a professional developer.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills">
+            <div class="skill">
+                <h3>HTML</h3>
+                <p>Proficient</p>
+            </div>
+
+            <div class="skill">
+                <h3>CSS</h3>
+                <p>Proficient</p>
+            </div>
+
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <p>Learning</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>A simple personal portfolio website.</p>
+        </div>
+
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>A basic web development mini project.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+
+        <form>
+            <input type="text" placeholder="Enter your name" required>
+
+            <input type="email" placeholder="Enter your email" required>
+
+            <textarea rows="4" placeholder="Write your message"
+            required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2026. My Portfolio. All rights reserved.
+    </footer>
+
+    <div class="back">
+        <a href="#top">↑ Back to Top</a>
+    </div>
+
+</div>
+
+</body>
+</html>
